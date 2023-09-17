@@ -5,7 +5,7 @@ import Home from './pages/Home.vue'
 <template>
   <div>
     <a href="">
-      <img src="./assets/readme-creator-icon.webp" class="logo vue" alt="Vue logo" />
+      <img src="./assets/readme-creator-icon.webp" class="logo" alt="Vue logo" />
     </a>
   </div>
   <router-view/>
@@ -15,7 +15,7 @@ import Home from './pages/Home.vue'
 <style scoped>
 .logo {
   height: 6em;
-  padding: 1.5em;
+  /* padding: 1.5em; */
   will-change: filter;
   transition: filter 300ms;
 }

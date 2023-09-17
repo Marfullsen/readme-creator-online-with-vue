@@ -9,21 +9,21 @@ const count = ref(0)
 </script>
 
 <template>
-  <main class="flex flex-center flex-col">
+  <article class="flex flex-center flex-col">
     <div class="borde-negro p-2 back-card" :class="cardInfo[this.currentTitle].color">
     </div>
     <div class="borde-negro p-2 z-2 front-card">
       <form @submit.prevent class="content">
         <label class="title" for="currentInput">{{cardInfo[this.currentTitle].title}}</label>
         <div>
-          <input type="text" :placeholder="cardInfo[this.currentTitle].subtitle" id="currentInput" required>
+          <input type="text" :placeholder="cardInfo[this.currentTitle].subtitle" id="currentInput" :required="cardInfo[this.currentTitle].required">
           <button
             @click="goToNextStep" 
             :class="cardInfo[this.currentTitle].color" class="button-next">➤</button>
         </div>
       </form>
     </div>
-  </main>
+  </article>
 </template>
 
 <script>
