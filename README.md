@@ -1,7 +1,38 @@
-# Vue 3 + Vite
+<p align="center">
+  <img src="./docs/img/readme-creator-icon.webp"></img>
+</p>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<div align="center">
 
-## Recommended IDE Setup
+# Readme Creator online using Vue.js
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[![gh-pages](https://img.shields.io/badge/Check-here!-green.svg)](https://marfullsen.github.io/estilos-sociales/)
+[![Vue.js](https://img.shields.io/badge/Vue-3.3.4-lime.svg "Badge Vue.js")](https://v3.vuejs.org/)
+[![Vite](https://img.shields.io/badge/Vite-4.4.9-yellow.svg)](https://vitejs.dev/)
+
+</div>
+
+## Installing
+
+```bash
+git clone https://github.com/Marfullsen/https://github.com/Marfullsen/readme-creator-online-with-vue.git.git
+cd readme-creator-online-with-vue
+npm install
+npm run dev
+```
+
+## Screenshots
+
+<div align="center">
+  <a href="https://marfullsen.github.io/" rel="noopener">
+  <img src="./docs/img/readme-creator-online.png" alt="Screenshot"></a>
+</div>
+
+<div align="center">
+  <a href="https://marfullsen.github.io/" rel="noopener">
+  <img src="./docs/img/readme-creator-disambiguation.png" alt="Screenshot"></a>
+</div>
+
+## References
+
+- [FAILED VERSION of Readme Creator online using LIT](https://github.com/Marfullsen/readme-creator-online-with-lit)
