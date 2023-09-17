@@ -16,7 +16,7 @@ const count = ref(0)
       <form @submit.prevent class="content">
         <label class="title" for="currentInput">{{cardInfo[this.currentTitle].title}}</label>
         <div>
-          <input type="text" :placeholder="cardInfo[0].subtitle" id="currentInput" required>
+          <input type="text" :placeholder="cardInfo[this.currentTitle].subtitle" id="currentInput" required>
           <button
             @click="goToNextStep" 
             :class="cardInfo[this.currentTitle].color" class="button-next">➤</button>
