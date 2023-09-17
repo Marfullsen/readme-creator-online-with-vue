@@ -47,8 +47,13 @@ export default {
   },
   methods: {
     goToNextStep() {
+      // Almacenar el valor ingresado.
       this.cardInfo[this.currentTitle].value = this.inputPrincipal;
+
+      // Limpiar el input para poder ingresar los demás valores.
       this.inputPrincipal = '';
+
+      // Reiniciar si se llegó al final.
       if (this.currentTitle < this.cardInfo.length-1) {
         this.currentTitle++
       } else {
