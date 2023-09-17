@@ -6,7 +6,7 @@
 
 # Readme Creator online using Vue.js
 
-[![gh-pages](https://img.shields.io/badge/Check-here!-green.svg)](https://marfullsen.github.io/estilos-sociales/)
+[![gh-pages](https://img.shields.io/badge/Check-here!-green.svg)](https://marfullsen.github.io/readme-creator-online-with-vue/)
 [![Vue.js](https://img.shields.io/badge/Vue-3.3.4-lime.svg "Badge Vue.js")](https://v3.vuejs.org/)
 [![Vite](https://img.shields.io/badge/Vite-4.4.9-yellow.svg)](https://vitejs.dev/)
 
@@ -15,7 +15,7 @@
 ## Installing
 
 ```bash
-git clone https://github.com/Marfullsen/https://github.com/Marfullsen/readme-creator-online-with-vue.git.git
+git clone https://github.com/Marfullsen/https://github.com/Marfullsen/readme-creator-online-with-vue.git
 cd readme-creator-online-with-vue
 npm install
 npm run dev
