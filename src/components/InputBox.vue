@@ -13,12 +13,11 @@ const count = ref(0)
     <div class="borde-negro p-2 back-card" :class="cardInfo[this.currentTitle].color">
     </div>
     <div class="borde-negro p-2 z-2 front-card">
-      <form @submit.prevent class="content">
+      <form @submit.prevent="goToNextStep" class="content">
         <label class="title" for="currentInput">{{cardInfo[this.currentTitle].title}}</label>
         <div>
-          <input type="text" :placeholder="cardInfo[this.currentTitle].subtitle" id="currentInput" :required="cardInfo[this.currentTitle].required">
+          <input type="text" v-model="inputPrincipal" :placeholder="cardInfo[this.currentTitle].subtitle" id="currentInput" :required="cardInfo[this.currentTitle].required">
           <button
-            @click="goToNextStep" 
             :class="cardInfo[this.currentTitle].color" class="button-next">➤</button>
         </div>
       </form>
@@ -34,19 +33,22 @@ export default {
   data() {
     return {
       currentTitle: 0,
+      inputPrincipal: '',
       cardInfo: [
-        { title: '¿Cómo se llama el proyecto?', subtitle: 'Nombre del proyecto', color: 'yellowCard', required: true },
-        { title: 'Cuéntalo en pocas palabras', subtitle: 'En simples palabras', color: 'blueCard', required: true },
-        { title: 'Descríbelo de manera general', subtitle: 'Explícalo en un resumen', color: 'orangeCard', required: false },
-        { title: '¿Qué tecnologías usaste?', subtitle: 'Tecnologías usadas', color: 'greenCard', required: false },
-        { title: 'Encuentra un ícono', subtitle: 'Buscar un ícono', color: 'greyCard', required: false },
-        { title: 'Sube algunas capturas', subtitle: 'Subir screenshots', color: 'pinkCard', required: false },
-        { title: 'Nombra algunas referencias', subtitle: 'Referencias, agradecimientos.', color: 'purpleCard', required: false },
+        { title: '¿Cómo se llama el proyecto?', subtitle: 'Nombre del proyecto', color: 'yellowCard', required: true, value: '' },
+        { title: 'Cuéntalo en pocas palabras', subtitle: 'En simples palabras', color: 'blueCard', required: true, value: '' },
+        { title: 'Descríbelo de manera general', subtitle: 'Explícalo en un resumen', color: 'orangeCard', required: false, value: '' },
+        { title: '¿Qué tecnologías usaste?', subtitle: 'Tecnologías usadas', color: 'greenCard', required: false, value: '' },
+        { title: 'Encuentra un ícono', subtitle: 'Buscar un ícono', color: 'greyCard', required: false, value: '' },
+        { title: 'Sube algunas capturas', subtitle: 'Subir screenshots', color: 'pinkCard', required: false, value: '' },
+        { title: 'Nombra algunas referencias', subtitle: 'Referencias, agradecimientos.', color: 'purpleCard', required: false, value: '' },
       ]
     }
   },
   methods: {
     goToNextStep() {
+      this.cardInfo[this.currentTitle].value = this.inputPrincipal;
+      this.inputPrincipal = '';
       if (this.currentTitle < this.cardInfo.length-1) {
         this.currentTitle++
       } else {
