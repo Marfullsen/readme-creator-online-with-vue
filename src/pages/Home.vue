@@ -1,21 +1,27 @@
 <script setup>
-import { ref } from 'vue'
 import InputBox from '../components/InputBox.vue';
-
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
 </script>
 
 <template>
-  <!-- <h1>{{ msg }}</h1> -->
+  <div>
+    <a href="">
+      <img src="/src/assets/readme-creator-icon.webp" class="logo" alt="Vue logo" />
+    </a>
+  </div>
   <InputBox/>
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
+.logo {
+  height: 6em;
+  margin-bottom: -40px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>

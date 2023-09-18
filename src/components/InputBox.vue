@@ -26,6 +26,8 @@ const count = ref(0)
 </template>
 
 <script>
+import { useInfoStore } from '../stores/info.js'
+
 export default {
   setup () {
     return {}
@@ -58,6 +60,9 @@ export default {
         this.currentTitle++
       } else {
         this.currentTitle = 0
+        const info = useInfoStore()
+        info.typed = this.cardInfo;
+        this.$router.push('/output')
       }
     },
   },

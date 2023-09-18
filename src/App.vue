@@ -3,11 +3,6 @@ import Home from './pages/Home.vue'
 </script>
 
 <template>
-  <div>
-    <a href="">
-      <img src="./assets/readme-creator-icon.webp" class="logo" alt="Vue logo" />
-    </a>
-  </div>
   <router-view/>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
