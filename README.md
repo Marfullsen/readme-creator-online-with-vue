@@ -12,6 +12,10 @@
 
 </div>
 
+## About
+
+Start your new project with a flexible documentation template. This template streamlines the documentation creation, enabling you to create the ideal documentation that reflects your goals and current status.
+
 ## Installing
 
 ```bash
