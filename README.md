@@ -4,7 +4,7 @@
 
 <div align="center">
 
-# Readme Creator online using Vue.js
+# Readme Creator online 
 
 [![gh-pages](https://img.shields.io/badge/Check-here!-green.svg)](https://marfullsen.github.io/readme-creator-online-with-vue/)
 [![Vue.js](https://img.shields.io/badge/Vue-3.3.4-lime.svg "Badge Vue.js")](https://v3.vuejs.org/)
