@@ -16,7 +16,7 @@ const count = ref(0)
       <form @submit.prevent="goToNextStep" class="content">
         <label class="title" for="currentInput">{{cardInfo[this.currentTitle].title}}</label>
         <div>
-          <input type="text" v-model="inputPrincipal" :placeholder="cardInfo[this.currentTitle].subtitle" id="currentInput" :required="cardInfo[this.currentTitle].required">
+          <input type="text" v-model="inputPrincipal" :placeholder="cardInfo[this.currentTitle].subtitle" id="currentInput" :required="cardInfo[this.currentTitle].required" autofocus>
           <button
             :class="cardInfo[this.currentTitle].color" class="button-next">➤</button>
         </div>
